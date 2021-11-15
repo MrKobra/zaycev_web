@@ -355,4 +355,58 @@ body {
   top: 5px;
 }
 
+/* Stage */
+.stage {
+  background: #ffffff;
+  padding: 100px 0;
+}
+.stage .heading h2 {
+  background: #ffffff;
+}
+.stage-container {
+  display: flex;
+  column-gap: 35px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+.stage-card {
+  flex-basis: calc(25% - 27px);
+  box-sizing: border-box;
+  position: relative;
+  padding: 10px 20px 21px 15px;
+  height: 175px;
+  background: url(../img/stage-border.png) no-repeat center center;
+  background-size: contain;
+}
+.stage-card:last-child {
+  background: url(../img/stage-bg.png) no-repeat center center;
+}
+.stage-card:last-child a {
+  height: 34px;
+  width: 200px;
+  margin-top: 10px;
+}
+.stage-card_num {
+  color: rgba(40, 126, 248, 0.1);
+  font-family: "Halvar Breitschrift", "Gotham Pro", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+.stage-card h3 {
+  color: #08083A;
+  font-size: 16px;
+  margin: 15px 0 0;
+}
+.stage-card p {
+  color: #696984;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 10px 0 0;
+}
+
 /*# sourceMappingURL=style.css.map */
