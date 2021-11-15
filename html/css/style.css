@@ -24,6 +24,18 @@ input:focus, textarea:focus {
 
 body {
   font-family: "Gotham Pro", "Halvar Breitschrift", sans-serif;
+  height: 10000px;
+}
+
+.btn {
+  background: linear-gradient(92.35deg, #F8D628 0%, #FFD915 49%, #F0C900 100%);
+  border-radius: 4px;
+  height: 42px;
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19232E;
 }
 
 /* Header */
@@ -126,6 +138,7 @@ body {
   color: #08083A;
   text-transform: uppercase;
   padding-bottom: 8px;
+  display: block;
 }
 .main-nav ul li.active a {
   position: relative;
@@ -141,6 +154,10 @@ body {
 }
 
 /* Home Main */
+.home-main {
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
 .home-main-nav {
   transform: translateY(-50%);
 }
@@ -171,6 +188,61 @@ body {
 }
 .home-main-nav ul li a h3 {
   margin: 0;
+}
+.home-main-block {
+  background-size: cover !important;
+  padding-top: 110px;
+  padding-bottom: 190px;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s linear;
+}
+.home-main-block.show {
+  display: block;
+  opacity: 1;
+}
+.home-main-text {
+  width: 650px;
+}
+.home-main-text .small {
+  font-size: 14px;
+  color: #ffffff;
+}
+.home-main-text h2 {
+  font-size: 40px;
+  line-height: 46px;
+  color: #ffffff;
+  font-family: "Halvar Breitschrift";
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 5px 0 0;
+}
+.home-main-text h2 span {
+  color: #F8D628;
+}
+.home-main-text p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 15px 0 0;
+  color: #ffffff;
+}
+.home-main-btn {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 30px;
+}
+.home-main-btn a:not(.order) {
+  width: 245px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+}
+.home-main .now {
+  font-size: 10px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -100,6 +100,7 @@
         color: $hColor
         text-transform: uppercase
         padding-bottom: 8px
+        display: block
       &.active
         a
           position: relative
@@ -114,6 +115,8 @@
 
 /* Home Main */
 .home-main
+  transition: all .5s linear
+  overflow: hidden
   &-nav
     transform: translateY(-50%)
     ul
@@ -140,3 +143,49 @@
           background-clip: text
           h3
             margin: 0
+  &-block
+    background-size: cover !important
+    padding-top: 110px
+    padding-bottom: 190px
+    opacity: 0
+    display: none
+    transition: all .5s linear
+    &.show
+      display: block
+      opacity: 1
+  &-text
+    width: 650px
+    .small
+      font-size: 14px
+      color: #ffffff
+    h2
+      font-size: 40px
+      line-height: 46px
+      color: #ffffff
+      font-family: $hFont
+      text-transform: uppercase
+      letter-spacing: 0.03em
+      margin: 5px 0 0
+      span
+        color: $yellow
+    p
+      font-size: 16px
+      line-height: 24px
+      margin: 15px 0 0
+      color: #ffffff
+  &-btn
+    display: flex
+    column-gap: 30px
+    margin-top: 30px
+    a
+      &:not(.order)
+        width: 245px
+        border: 1px solid #ffffff
+        color: #ffffff
+        background: transparent
+  .now
+    font-size: 10px
+    line-height: 15px
+    color: #ffffff
+    margin-top: 10px
+    display: inline-block
