@@ -409,4 +409,14 @@ body {
   margin: 10px 0 0;
 }
 
+/* Client */
+.client {
+  padding: 100px 0;
+}
+.client-slide_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style.css.map */

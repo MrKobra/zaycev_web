@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // Главный экран
     function setHomeMainHeight(href) {
         $('.home-main').css('height', $(href).outerHeight());
     }
@@ -13,4 +14,12 @@ $(document).ready(function(){
         $(href).addClass('show');
     })
 
+    // Слайдер клиентов
+    $('.client-slider').slick({
+        arrows: false,
+        slidesToShow: 6,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1000
+    })
 })
