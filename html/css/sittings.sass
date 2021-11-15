@@ -14,7 +14,7 @@ $tColor: #696984
 
 body
   font-family: $mFont, $hFont, sans-serif
-  height: 10000px
+  background: #F4F7FA
 
 .btn
   background: linear-gradient(92.35deg, #F8D628 0%, #FFD915 49%, #F0C900 100%)
@@ -25,3 +25,32 @@ body
   align-items: center
   justify-content: center
   color: #19232E
+
+.heading
+  text-align: center
+  position: relative
+  &:before
+    content: ''
+    width: 100%
+    height: 2px
+    background: $blue
+    left: 0
+    top: 20px
+    position: absolute
+  h2
+    font-family: $hFont, $mFont, sans-serif
+    color: $hColor
+    font-size: 34px
+    line-height: 41px
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    margin: 0
+    position: relative
+    display: inline-block
+    padding: 0 10px
+    background: #F4F7FA
+  p
+    text-align: center
+    color: $tColor
+    width: 55%
+    margin: 10px auto 0

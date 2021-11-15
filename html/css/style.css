@@ -24,7 +24,7 @@ input:focus, textarea:focus {
 
 body {
   font-family: "Gotham Pro", "Halvar Breitschrift", sans-serif;
-  height: 10000px;
+  background: #F4F7FA;
 }
 
 .btn {
@@ -36,6 +36,39 @@ body {
   align-items: center;
   justify-content: center;
   color: #19232E;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+}
+.heading:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #00ABF3;
+  left: 0;
+  top: 20px;
+  position: absolute;
+}
+.heading h2 {
+  font-family: "Halvar Breitschrift", "Gotham Pro", sans-serif;
+  color: #08083A;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  background: #F4F7FA;
+}
+.heading p {
+  text-align: center;
+  color: #696984;
+  width: 55%;
+  margin: 10px auto 0;
 }
 
 /* Header */
@@ -243,6 +276,83 @@ body {
   color: #ffffff;
   margin-top: 10px;
   display: inline-block;
+}
+
+/* Service */
+.service {
+  padding: 100px 0;
+}
+.service-container {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 70px;
+}
+.service-card {
+  border: 2px solid #00ABF3;
+  border-radius: 10px;
+  padding: 25px 25px 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.service-card_btn {
+  margin-top: 30px;
+}
+.service-card_btn a {
+  color: #696984;
+  border: 2px solid #00ABF3;
+  background: transparent;
+}
+.service-card_btn a:hover {
+  color: #08083A;
+  background: rgba(248, 214, 40, 0.2);
+  border-radius: 4px;
+  border-color: #F8D628;
+}
+.service-card h3 {
+  margin: 0;
+  color: #00ABF3;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.service-card span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  margin-top: 5px;
+  display: block;
+}
+.service-card strong {
+  font-size: 14px;
+  line-height: 17px;
+  color: #404040;
+  display: block;
+  margin-top: 15px;
+}
+.service-card ul {
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.service-card ul li {
+  list-style: none;
+  position: relative;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #19232E;
+}
+.service-card ul li:before {
+  content: "";
+  height: 7px;
+  width: 7px;
+  background: url(../img/list-arrow.png) no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
