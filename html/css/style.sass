@@ -309,3 +309,110 @@
       display: flex
       align-items: center
       justify-content: center
+
+/* Portfolio */
+.portfolio
+  padding-top: 150px
+  background: #ffffff
+  .show-more
+    a
+      width: 235px
+  &-container
+    display: flex
+    flex-direction: column
+    row-gap: 50px
+    width: 1010px
+    margin: 70px auto 0
+  .heading 
+    h2
+      background: #ffffff
+  &-card
+    border: 2px solid $blue
+    border-radius: 15px
+    display: flex
+    padding: 50px 40px
+    box-sizing: border-box
+    column-gap: 30px
+    align-items: center
+    transition: all .2s ease-in-out
+    &:hover
+      background: #F4F7FA
+      filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05))
+    &_img
+      flex-basis: 500px
+      img
+        max-width: 100%
+    &_info
+      flex-basis: calc(100% - 530px)
+      h3
+        color: $blue
+        font-size: 20px
+        line-height: 26px
+        margin: 0
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        font-family: $hFont, $mFont, sans-serif
+      p
+        font-size: 16px
+        color: $tColor
+        line-height: 23px
+        margin: 15px 0 0
+      .btn
+        border: 2px solid $blue
+        background: transparent
+        height: 38px
+        width: 186px
+        color: $tColor
+        margin-top: 50px
+
+/* Team */
+.team
+  padding: 150px 0
+  background: #ffffff
+  overflow: hidden
+  .heading
+    h2
+      background: #ffffff
+  &-container
+    margin-top: 70px
+    display: flex
+    padding: 0 160px
+    column-gap: 80px
+    align-items: center
+  &-nav
+    flex-basis: 310px
+    ul
+      margin: 0
+      padding: 0
+      display: flex
+      flex-direction: column
+      row-gap: 50px
+      border-right: 2px solid $blue
+      li
+        list-style: none
+        a
+          color: $tColor
+          font-size: 20px
+          line-height: 26px
+          letter-spacing: 0.06em
+          font-family: $hFont, $mFont, sans-serif
+          text-transform: uppercase
+  &-block
+    flex-basis: calc(100% - 310px)
+    text-align: center
+    opacity: 0
+    display: none
+    &.show
+      display: block
+    h3
+      text-transform: uppercase
+      font-size: 16px
+      line-height: 21px
+      letter-spacing: 0.06em
+      color: $hColor
+      margin: 25px 0 0
+    p
+      margin: 15px 0 0
+      color: $tColor
+      font-size: 16px
+      line-height: 23px
