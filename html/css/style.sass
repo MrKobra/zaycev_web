@@ -4,13 +4,84 @@
 
 /* Header */
 .main-header
+  padding: 11px 0
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06)
   .container
     display: flex
     justify-content: space-between
+    align-items: center
   &_contact
+    display: flex
+    column-gap: 45px
     ul
       margin: 0
       padding: 0
       li
         list-style: none
     &-msg
+      ul
+        li
+          a
+            color: #999999
+            font-size: 13px
+            line-height: 19px
+      .skype
+        margin-top: 6px
+        ul
+          li
+            &:first-child
+              a
+                &:before
+                  background: url(../img/skype_icon.png) no-repeat center center
+      .mail
+        ul
+          li
+            &:first-child
+              a
+                &:before
+                  background: url(../img/msg_icon.png) no-repeat center center
+      .skype, .mail
+        ul
+          li
+            text-align: right
+            &:first-child
+              a
+                position: relative
+                padding-left: 29px
+                display: inline-block
+                &:before
+                  content: ''
+                  width: 24px
+                  height: 24px
+                  position: absolute
+                  left: 0
+                  top: 50%
+                  margin-top: -12px
+    &-phone
+      text-align: right
+      ul
+        li
+          &:first-child
+            a
+              position: relative
+              padding-left: 29px
+              &:before
+                content: ''
+                width: 24px
+                height: 24px
+                background: url(../img/call_icon.png) no-repeat center center
+                position: absolute
+                left: 0
+                top: 50%
+                margin-top: -12px
+          a
+            color: #08083A
+            font-size: 18px
+            line-height: 26px
+            display: inline-block
+      .popup-btn
+        margin-top: 2px
+        font-size: 14px
+        line-height: 20px
+        color: $blue
+        text-decoration: underline

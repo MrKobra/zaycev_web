@@ -22,10 +22,23 @@ input:focus, textarea:focus {
   margin: 0 auto;
 }
 
+body {
+  font-family: "Gotham Pro", "Halvar Breitschrift", sans-serif;
+}
+
 /* Header */
+.main-header {
+  padding: 11px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+}
 .main-header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.main-header_contact {
+  display: flex;
+  column-gap: 45px;
 }
 .main-header_contact ul {
   margin: 0;
@@ -33,6 +46,67 @@ input:focus, textarea:focus {
 }
 .main-header_contact ul li {
   list-style: none;
+}
+.main-header_contact-msg ul li a {
+  color: #999999;
+  font-size: 13px;
+  line-height: 19px;
+}
+.main-header_contact-msg .skype {
+  margin-top: 6px;
+}
+.main-header_contact-msg .skype ul li:first-child a:before {
+  background: url(../img/skype_icon.png) no-repeat center center;
+}
+.main-header_contact-msg .mail ul li:first-child a:before {
+  background: url(../img/msg_icon.png) no-repeat center center;
+}
+.main-header_contact-msg .skype ul li, .main-header_contact-msg .mail ul li {
+  text-align: right;
+}
+.main-header_contact-msg .skype ul li:first-child a, .main-header_contact-msg .mail ul li:first-child a {
+  position: relative;
+  padding-left: 29px;
+  display: inline-block;
+}
+.main-header_contact-msg .skype ul li:first-child a:before, .main-header_contact-msg .mail ul li:first-child a:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+.main-header_contact-phone {
+  text-align: right;
+}
+.main-header_contact-phone ul li:first-child a {
+  position: relative;
+  padding-left: 29px;
+}
+.main-header_contact-phone ul li:first-child a:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/call_icon.png) no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+.main-header_contact-phone ul li a {
+  color: #08083A;
+  font-size: 18px;
+  line-height: 26px;
+  display: inline-block;
+}
+.main-header_contact-phone .popup-btn {
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00ABF3;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
