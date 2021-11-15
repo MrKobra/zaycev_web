@@ -173,3 +173,4 @@ html/start.bat
 .idea/deployment.xml
 .idea/webServers.xml
 .idea/chair_web.iml
+*.iml
